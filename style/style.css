@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Orbitron', sans-serif;
   background: linear-gradient(to bottom, #000000, #0a084d);
   color: white;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  transition: background 0.5s ease, color 0.5s ease;
+  transition: background 0.5s ease, color 0.5s ease; 
 }
 
 .gradient-text {
@@ -19,13 +23,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; /* for Firefox */
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +37,7 @@ body {
   text-align: center;
   background: transparent;
   padding-top: 5rem;
+  padding-bottom: 2rem;
   z-index: 1;
 }
 
@@ -170,7 +175,7 @@ footer {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  /*background: rgba(0, 0, 0, 0.85);*/
   z-index: 10;
 }
 
@@ -199,10 +204,6 @@ footer {
   height: 60px;
   margin-right: auto;
   margin-left: 10px;
-}
-
-.title, h1, h2, h3, h4 {
-  color: #feb406;
 }
 
 .navbar a {
