@@ -204,6 +204,12 @@ footer {
   height: 60px;
   margin-right: auto;
   margin-left: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-logo:hover 
+{
+  transform: scale(1.1); /* Increases size by 10% */
 }
 
 .navbar a {
