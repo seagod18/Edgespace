@@ -7,41 +7,41 @@
   <link rel="stylesheet" href="style/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
-  <header class="navbar">
-    <a href="#" class="nav-logo-link">
-      <img src="images/logos.png" alt="Edge Space Logo" class="nav-logo">
-    </a>
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#a1">About</a></li>
-        <li><a href="#m1">Mission</a></li>
-        <li><a href="#v1">Vision</a></li>
-        <li><a href="#p1">Product</a></li>
-        <li><a href="#t1">Team</a></li>
-        <li><a href="#c1">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+    <header class="navbar">
+      <a href="#" class="nav-logo-link">
+        <img src="images/logos.png" alt="Edge Space Logo" class="nav-logo">
+      </a>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#a1">About</a></li>
+          <li><a href="#m1">Mission</a></li>
+          <li><a href="#v1">Vision</a></li>
+          <li><a href="#p1">Product</a></li>
+          <!-- <li><a href="#t1">Team</a></li> -->
+          <li><a href="#c1">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header class="hero">
-  <div class="container" data-aos="fade-down">
-    <h1 class="title gradient-text">Welcome to Edge Space</h1>
-    <p class="subtitle">Exploring the edge of innovation and beyond</p>
-  </div>
-</header>
-
+    <section class="hero">
+      <div class="container" data-aos="fade-down">
+        <h1 class="title gradient-text">Welcome to Edge Space</h1>
+        <p class="subtitle">Exploring the edge of innovation and beyond</p>
+      </div>
+    </section>
 
   
   <main>
     <section id ="a1" class="section">
       <h2> </h2>
     </section>
-    <section id="about" class="section about-section" data-aos="fade-up">
+    <section id="about" class="section about-section" data-aos="fade-up" data-aos-delay="100">
   <div class="about-wrapper">
     <div class="text-content">
       <h2>About Us</h2>
@@ -59,7 +59,7 @@
       <img src="/images/oceanBlue.jpg" alt="Satellite" />
     </div>
   </div>
-</section>
+  </section>
 
 
 
@@ -93,7 +93,89 @@
   <section id ="p1" class="section">
       <h2> </h2>
     </section>
-  <section id="product" class="section product-section" data-aos="fade-up" data-aos-delay="100">
+  <section id="services" class="section services-section" data-aos="fade-up">
+  <h2>Our Services</h2>
+  <div class="scroll-indicator scroll-left" onclick="scrollServices('left')">
+  <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </div>
+  <div class="scroll-indicator scroll-right" onclick="scrollServices('right')">
+  <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+</div>
+
+  <div class="service-card-container">
+    <div class="service-card" style="background-image: url('/images/insurance.jpg');">
+      <div class="service-content">
+        <h3>Insurance</h3>
+        <p>Underwriting risk assessment- Claims validation and verification- Natural disaster exposure analysis 
+          (flood, cyclone, wildfire)- Property condition monitoring</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/fields.jpg');">
+      <div class="service-content">
+        <h3>Agriculture</h3>
+        <p>Crop health monitoring (NDVI, chlorophyll analysis)- Yield estimation and forecasting- Early detection of crop stress, 
+          pests, or diseases- Soil moisture and nutrient mapping</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/Banking.jpg');">
+      <div class="service-content">
+        <h3>Banking and Finance</h3>
+        <p>Agricultural loan risk scoring- Collateral monitoring for farm and land-backed loans- ESG compliance monitoring- Environmental risk assessments for lending portfolios
+</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/Maritime.jpg');">
+      <div class="service-content">
+        <h3>Maritime</h3>
+        <p>Port infrastructure monitoring- Marine pollution detection (oil spills, algal blooms)- Coastal erosion 
+          and shoreline change monitoring- Vessel activity tracking</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/Mining.jpg')">
+      <div class="service-content">
+        <h3>Mining</h3>
+        <p>Mineral exploration mapping- Mine site change detection- Tailings dam monitoring and compliance- 
+          Environmental impact assessment</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/environmental.jpg');">
+      <div class="service-content">
+        <h3>Environmental Monitoring</h3>
+        <p>Deforestation and land use change analysis- Wetland and watershed health assessment- 
+          Carbon stock estimation- Biodiversity and habitat monitoring</p>
+      </div>
+    </div>
+
+    <div class="service-card" style="background-image: url('/images/govt.jpg');">
+      <div class="service-content">
+        <h3>Government and Public Sector</h3>
+        <p>Disaster preparedness and response- Urban development planning- Food security monitoring- National scale environmental reporting</p>
+      </div>
+    </div>
+
+
+    <!-- Add more cards here -->
+
+    
+  </div>
+  <div id="service-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h3 id="modal-title">Service Title</h3>
+    <p id="modal-description">Full service description goes here...</p>
+  </div>
+  </div>
+
+</section>
+
+
+
+  <!-- <section id="product" class="section product-section" data-aos="fade-up" data-aos-delay="100">
   <h2>Our Product</h2>
   <div class="card-container">
     <div class="product-card" data-aos="flip-left">
@@ -105,9 +187,9 @@
       <p>An instant nuclear orbital strike within a 350 meter radius anywhere on the planet.</p>
     </div>
   </div>
-</section>
+</section> -->
 
-<section id ="t1" class="section">
+<!-- <section id ="t1" class="section">
       <h2> </h2>
     </section>
     <section id="team" class="section" data-aos="fade-up" data-aos-delay="250">
@@ -126,19 +208,21 @@
         <p>Me.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <section id="c1" class="section">
 
     <section id="contact" class="section" data-aos="fade-up" data-aos-delay="300">
       <h2>Contact Us</h2>
-      <form action="#" method="post" class="contact-form">
+      <!-- <form action="#" method="post" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
-      </form>
+      </form> -->
+    <a href="#" class="email-button" onclick="window.open('mailto:ashwath.rajkumar@edgespace.com'); return false;">Send us an Email</a>
+
     </section>
   </main>
 
